@@ -1,0 +1,24 @@
+﻿<Window x:Class="UcakBileti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UcakBileti"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="504" Width="847" WindowStartupLocation="CenterScreen" MaxWidth="847" MaxHeight="504" MinWidth="847" MinHeight="504" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="cay.jpg"/>
+    </Window.Background>
+    <Grid Background="Transparent"   Margin="10,39,727,350">
+        <Button x:Name="btn1" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="15 Eylül" Background="{x:Null}" Click="btn1_Click"></Button>
+        <Button x:Name="btn2" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="16 Eylül" Background="{x:Null}"  Width="91" Height="30" Margin="6,136,5,-81" Click="btn2_Click"></Button>
+        <Button x:Name="btn3" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="17 Eylül" Background="{x:Null}"  Width="91" Height="31" Margin="6,220,5,-166" Click="btn3_Click"></Button>
+        <Button x:Name="btn4" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Content="Temizle" Background="{x:Null}"  Width="91" Height="31" Margin="6,292,5,-238" Click="btn4_Click"></Button>
+
+        <ListBox x:Name="lisbx1" Background="Transparent" BorderThickness="0" Margin="116,-27,-623,-332" FontWeight="Bold" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display"/>
+        <ListBox x:Name="lisbx2" Background="Transparent" BorderThickness="0" Margin="116,-27,-623,-332" FontWeight="Bold" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display"/>
+        <ListBox x:Name="lisbx3" Background="Transparent" BorderThickness="0" Margin="116,-27,-623,-332" FontWeight="Bold" TextOptions.TextHintingMode="Fixed" TextOptions.TextFormattingMode="Display"></ListBox>
+        <Label Content="X" HorizontalAlignment="Left" Margin="787,-27,-712,0" VerticalAlignment="Top" Width="27" FontWeight="ExtraBold" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display" FontStretch="Expanded" FontSize="20" MouseUp="Label_MouseUp"/>
+
+    </Grid>
+</Window>
